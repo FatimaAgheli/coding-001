@@ -1,17 +1,13 @@
+# given a list of numbers,
+# find the best time to buy, and the best time to sell,
+# if numbers keep going down, dont buy at all,
+def get_max_profit(stock_prices):
+  for current in range(len(stock_prices)):
+    # print(stock_prices[current] + ',' + stock_prices[current + 1])
+    print(current)
 
+  max_profit = 0
+  return max_profit
 
-sampleList = ['f','a','t','i','m','a']
-
-def reverse(charList):
-    leftIndex = 0
-    rightIndex = len(charList) - 1
-
-    while (leftIndex < rightIndex):
-        charList[leftIndex], charList[rightIndex] = charList[rightIndex], charList[leftIndex]
-        leftIndex += 1
-        rightIndex -= 1
-
-reverse(sampleList)
-print(sampleList);
-
-    
+get_max_profit([55,66,77,44])
+# print(get_max_profit([55,66,77,44]))'
