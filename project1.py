@@ -17,8 +17,8 @@ def get_max_profit(stock_prices):
 
   return max_profit
 
-# print(get_max_profit([100, 60, 40, 10, 5]))
-print(get_max_profit([5]))
+print(get_max_profit([100, 60, 40, 10, 5]))
+# print(get_max_profit([5]))
 
 
 # O(n^2) time complexity, O(n) space complexity
