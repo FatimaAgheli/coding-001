@@ -1,23 +1,5 @@
 
 
-    
-
-  'max_profit = 0
-  'return max_profit
-
-get_max_profit([55,66,77,44])
-# print(get_max_profit([55,66,77,44]))'
-
-samplelist = ["60", "12", "8", "9", "30", "22"]
-def get_max_profit(stock_prices):
-  for current in range(len(stock_prices)):
-    print(stock_prices[current])
-
-  max_profit = 18
-  return max_profit
-
-get_max_profit([55,66,77,44])
-
 
 
 # finished code:
