@@ -9,3 +9,6 @@ class TestCard(unittest.TestCase):
         self.assertEqual(card.get_suit(), 'd')
         self.assertEqual(card.get_rank(), '2')
         self.assertEqual(card.get_rank_value(), 2)
+
+if __name__ == '__main__':
+    unittest.main()

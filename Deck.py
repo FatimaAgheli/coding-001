@@ -21,14 +21,23 @@ class Deck():
         self.id = self.genereatedTime
 
     def __str__(self):
-        cards = map(lambda e: str(e), self.undealtCards)
+        '''
+            Returns a string representation of all the remaining cards left in the deck: 
+            e.g. {'As', 'Qd', 'Jc'}
+        '''
+        # stub - need this to return string representation of all remaining cards left in the deck
+        cards = ['']
         return str(set(cards))
 
     def __repr__(self):
         return f'{self.__class__.__name__}({self.id}, {str(self)})'
 
     def __len__(self):
-        return len(self.undealtCards)
+        '''
+            Return number of remaining cards in deck
+        '''
+        # stub - need to return correct number
+        return 0
 
     def deal(self, numCards=1, **kwargs):
         '''
