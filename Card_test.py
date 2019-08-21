@@ -46,11 +46,10 @@ class TestCard(unittest.TestCase):
         self.assertEqual(card.get_rank_value(), 13)
         self.assertEqual(card.cardNumber, 46)
 
-class TestDeck(unittest.TestCase):
-    def test_init_with_deck(self):
-        card = Card(5) # 3c
-        self.assertEqual(card.get_card_number(), 5)
-
+    def test_card_equality(self):
+        card = Card('kh')
+        card2 = Card('kh')
+        self.assertTrue(card == card2)
 
 if __name__ == '__main__':
     unittest.main()

@@ -14,10 +14,10 @@ class Deck():
             auto-shuffles a standard deck of 52 cards
         '''
         # line below is a stub. You need to set correctly what cards should be based on requirements
-        cards = []
-        for i in ['d', 'c', 'h', 's']:
-            for j in ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']:
-                cards.append(i, j)
+        # cards = []
+        # what are the problems you need to resolve?
+        # cards.append(Card('2d'))
+        cards = [Card(i) for i in range(0, 52)]
 
         self.allCards = tuple(cards)
         self.genereatedTime = time.time_ns()
@@ -29,7 +29,6 @@ class Deck():
             Returns a string representation of all the remaining cards left in the deck: 
             e.g. {'As', 'Qd', 'Jc'}
         '''
-        # stub - need this to return string representation of all remaining cards left in the deck
         cards = self.undealtCards
         return str(set(cards))
 
