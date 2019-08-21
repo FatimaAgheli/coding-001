@@ -15,18 +15,22 @@ class Deck():
         '''
         # line below is a stub. You need to set correctly what cards should be based on requirements
         cards = []
+        for i in ['d', 'c', 'h', 's']:
+            for j in ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']:
+                cards.append(i, j)
+
         self.allCards = tuple(cards)
         self.genereatedTime = time.time_ns()
         self.undealtCards = deque(cards)
         self.id = self.genereatedTime
-
+    
     def __str__(self):
         '''
             Returns a string representation of all the remaining cards left in the deck: 
             e.g. {'As', 'Qd', 'Jc'}
         '''
         # stub - need this to return string representation of all remaining cards left in the deck
-        cards = ['']
+        cards = self.undealtCards
         return str(set(cards))
 
     def __repr__(self):
@@ -37,7 +41,7 @@ class Deck():
             Return number of remaining cards in deck
         '''
         # stub - need to return correct number
-        return 0
+        return len(self.undealtCards)
 
     def deal(self, numCards=1, **kwargs):
         '''
