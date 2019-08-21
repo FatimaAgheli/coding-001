@@ -47,8 +47,8 @@ class TestCard(unittest.TestCase):
         self.assertEqual(card.cardNumber, 46)
 
     def test_card_equality(self):
-        card = Card('kh')
-        card2 = Card('kh')
+        card = Card('Kh')
+        card2 = Card('Kh')
         self.assertTrue(card == card2)
 
 if __name__ == '__main__':
