@@ -18,6 +18,7 @@ class Deck():
         # what are the problems you need to resolve?
         # cards.append(Card('2d'))
         cards = [Card(i) for i in range(0, 52)]
+        random.shuffle(cards)
 
         self.allCards = tuple(cards)
         self.genereatedTime = time.time_ns()
