@@ -40,8 +40,9 @@ class Deck():
         '''
             Return number of remaining cards in deck
         '''
-        # stub - need to return correct number
-        return len(self.undealtCards)
+
+        cards = self.undealtCards
+        return len(cards)
 
     def deal(self, numCards=1, **kwargs):
         '''
@@ -53,6 +54,9 @@ class Deck():
         '''
         # again a stub - you are expected to write this code
         cards = []
+        for _ in range(numCards):
+            s = self.undealtCards.popleft()
+            cards.append(s)
         return cards if len(cards) > 1 else cards[0]
 
     def __eq__(self, other):
