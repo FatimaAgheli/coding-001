@@ -52,7 +52,10 @@ class Deck():
             If numCards > 1, return list of dealt cards
             If numCards ==1, return just dealt card
         '''
-        # again a stub - you are expected to write this code
+        
+        if "specify_card" in kwargs:
+            self.undealtCards.remove(kwargs.get("specify_card"))
+
         cards = []
         for _ in range(numCards):
             s = self.undealtCards.popleft()
