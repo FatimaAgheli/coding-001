@@ -23,7 +23,7 @@ class TestDeck(unittest.TestCase):
         deck = Deck()
         result = deck.deal(specify_card=Card('4c'))
         self.assertEqual(result, Card('4c'))
-        self.assertEqual(len(result), 51)
+        self.assertEqual(len(deck), 51)
         self.assertFalse('4c' in str(deck))
 
 

@@ -53,8 +53,9 @@ class Deck():
             If numCards ==1, return just dealt card
         '''
         
-        if "specify_card" in kwargs:
-            self.undealtCards.remove(kwargs.get("specify_card"))
+        if 'specify_card' in kwargs:
+            self.undealtCards.remove(kwargs['specify_card'])
+            return kwargs['specify_card']
 
         cards = []
         for _ in range(numCards):
