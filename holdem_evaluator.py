@@ -9,7 +9,7 @@ def poker_score(hand):
     rcounts = {ranks.find(r): ''.join(hand).count(r) for r, _ in hand}.items()
     score, ranks = zip(*sorted(((cnt, rank) for rank, cnt in rcounts), reverse=True))
     if len(score) == 5:
-        if ranks[0:2] == (12, 3):
+        if ranks[0:2] == (14, 5):
             ranks = (5, 4, 3, 2, 1)
         straight = ranks[0] - ranks[4] == 4
         flush = len({suit for _, suit in hand}) == 1
