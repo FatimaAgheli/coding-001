@@ -16,6 +16,9 @@
       * this approach is called test-driven development, and some engineering firms requires you to work this way.
 
 ## poker assignment, part 2
-* TBD
+* Take the poker_score() function you tested and use it to create PokerHand class
+   * See PokerHand.py
+   * Need to do all the asks with TODOs in the .py file
+   * Need to write unit tests to proof implementation works
 
 
